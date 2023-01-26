@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Footer = () => {
     return (
         <div className="main-color">
@@ -7,14 +9,14 @@ export const Footer = () => {
                 </p>
                 <ul className="nav navbar-dark col-md-4 justify-content-end">
                     <li className="nav-items">
-                        <a className="nav-link px-2 text-white" href="#">
+                        <NavLink className="nav-link px-2 text-white" to='/home'>
                             Inicio
-                        </a>
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link px-2 text-white" href="#">
+                        <NavLink className="nav-link px-2 text-white" to='/search'>
                             Buscar libros
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </footer>

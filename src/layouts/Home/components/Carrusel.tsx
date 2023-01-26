@@ -2,6 +2,7 @@ import { ReturnBook } from "./ReturnBook";
 import { useEffect, useState } from "react";
 import BookModel from "../../../models/BookModel";
 import { SpinnerLoading } from "../../Utils/SpinnerLoading";
+import { NavLink } from "react-router-dom";
 
 export const Carrusel = () => {
 
@@ -116,7 +117,7 @@ export const Carrusel = () => {
             </div>
 
             <div className="homepage-carousel-title mt-3">
-                <a className="btn btn-outline-secundary btn-lg" href="#">Ver más</a>
+                <NavLink className="btn btn-outline-secundary btn-lg" to='/search'>Ver más</NavLink>
             </div>
         </div>
     );
