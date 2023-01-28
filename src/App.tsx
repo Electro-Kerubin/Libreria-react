@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import './css/App.css';
+import { BookCheckOutPage } from './layouts/BookCheckOutPage/BookCheckOutPage';
 import { HomePage } from './layouts/Home/HomePage';
 import { Footer } from './layouts/NavbarAndFooter/Footer';
 import { Navbar } from './layouts/NavbarAndFooter/Navbar';
@@ -24,9 +25,13 @@ export const App = () => {
           <Route path='/search'>
             <SearchBooksPage />
           </Route>
+
+          <Route path='/checkout/:bookId'>
+            <BookCheckOutPage />
+          </Route>
         </Switch>
       </div>
-
+      
       <Footer />
     </div>
   );
